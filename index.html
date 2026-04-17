@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – SalahOS</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      background: #ffffff;
+    }
+    header {
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 24px;
+      margin-bottom: 36px;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #1b5e20;
+      margin-bottom: 8px;
+    }
+    header p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #1b5e20;
+      margin: 40px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: #2e7d32;
+      margin: 24px 0 8px;
+    }
+    p { margin-bottom: 14px; }
+    ul, ol {
+      margin: 10px 0 18px 24px;
+    }
+    li { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 0.9rem;
+    }
+    th {
+      background: #e8f5e9;
+      color: #1b5e20;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid #c8e6c9;
+    }
+    td {
+      padding: 9px 14px;
+      border: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #f9fbe7; }
+    .highlight-box {
+      background: #e8f5e9;
+      border-left: 4px solid #4CAF50;
+      padding: 14px 18px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .warning-box {
+      background: #fff8e1;
+      border-left: 4px solid #FFC107;
+      padding: 14px 18px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    a { color: #2e7d32; }
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.88rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p><strong>Application:</strong> SalahOS – Islamic Prayer Tracker</p>
+    <p><strong>Developer:</strong> Ali Sohail</p>
+    <p><strong>Effective Date:</strong> April 17, 2026</p>
+    <p><strong>Last Updated:</strong> April 17, 2026</p>
+  </header>
+
+  <!-- 1. INTRODUCTION -->
+  <h2>1. Introduction</h2>
+  <p>
+    Welcome to <strong>SalahOS</strong> ("the App," "we," "us," or "our"). SalahOS is an Islamic prayer
+    companion application that helps Muslim users track their five daily prayers (Salah), find Qibla
+    direction, maintain prayer streaks, join accountability groups, and receive personalised coaching
+    feedback based on their prayer habits.
+  </p>
+  <p>
+    This Privacy Policy explains what information we collect, why we collect it, how we use and protect it,
+    and your rights regarding your data. By using SalahOS, you agree to the practices described in this
+    policy. If you do not agree, please discontinue use of the App.
+  </p>
+  <div class="highlight-box">
+    <strong>Summary:</strong> We collect only what is necessary to provide the core features of the App.
+    We do not sell your personal data. We do not use your data for advertising. Location data is used
+    solely to calculate prayer times and Qibla direction.
+  </div>
+
+  <!-- 2. INFORMATION WE COLLECT -->
+  <h2>2. Information We Collect</h2>
+  <p>We collect the following categories of information when you create an account and use the App:</p>
+
+  <h3>2.1 Account &amp; Identity Information</h3>
+  <ul>
+    <li><strong>Email address</strong> – required to create and log into your account.</li>
+    <li><strong>Display name</strong> – the name shown to other group members.</li>
+    <li><strong>Password</strong> – handled entirely by Firebase Authentication; we never store or have
+      access to your plaintext password.</li>
+    <li><strong>Timezone</strong> – automatically detected from your device at registration to ensure prayer
+      times are displayed in your local time.</li>
+  </ul>
+
+  <h3>2.2 Location Data</h3>
+  <ul>
+    <li><strong>GPS coordinates (latitude &amp; longitude)</strong> – collected when you open the App and
+      when you use the Qibla Compass feature.</li>
+    <li><strong>City label</strong> – a human-readable city name derived from your coordinates, stored for
+      display purposes only.</li>
+  </ul>
+  <p>
+    Your coordinates are used exclusively to (a) fetch accurate daily prayer times from the Aladhan API and
+    (b) calculate the Qibla bearing on your device. Your precise GPS coordinates are cached in our database
+    linked to the date, so that prayer times do not need to be re-fetched if you remain in the same area.
+    We recalculate only when you move more than approximately 2.5 km. Location data is never sold, shared
+    with advertisers, or used for any purpose other than prayer-time and Qibla calculations.
+  </p>
+
+  <h3>2.3 Prayer &amp; Religious Practice Data</h3>
+  <ul>
+    <li><strong>Daily prayer log</strong> – your completion status for each of the five prayers (Fajr,
+      Dhuhr, Asr, Maghrib, Isha): on-time, late, missed, or unmarked.</li>
+    <li><strong>Daily prayer score</strong> – a numerical score calculated from your statuses (0–100).</li>
+    <li><strong>Streak data</strong> – current streak, longest streak, Fajr-specific streak, and total days
+      prayed.</li>
+    <li><strong>Madhab preference</strong> (optional) – your Islamic jurisprudence school (Hanafi, Shafii,
+      Maliki, or Hanbali), used only to adjust prayer time calculation methods.</li>
+  </ul>
+
+  <h3>2.4 Notification &amp; Device Data</h3>
+  <ul>
+    <li><strong>Firebase Cloud Messaging (FCM) token</strong> – a device-specific push notification token
+      used to send prayer reminders and group pings to your device.</li>
+    <li><strong>Device platform</strong> – iOS or Android, recorded alongside your FCM token.</li>
+    <li><strong>Notification preferences</strong> – per-prayer settings including whether reminders are
+      enabled, how many minutes before prayer to notify you, and the alert sound level.</li>
+  </ul>
+
+  <h3>2.5 Group &amp; Social Data</h3>
+  <ul>
+    <li><strong>Group membership</strong> – if you create or join an accountability group, your display name
+      and daily prayer statuses are visible to other members of that group.</li>
+    <li><strong>Invite codes</strong> – 6-character codes used to join groups; these are not linked to
+      personal identity.</li>
+  </ul>
+
+  <h3>2.6 Usage &amp; Analytics Data</h3>
+  <ul>
+    <li><strong>Weekly prayer analytics</strong> – aggregated breakdown of your prayer statuses across a
+      7-day window, used to generate personalised coaching feedback.</li>
+    <li><strong>Offline sync queue</strong> – pending prayer status updates stored temporarily on your
+      device when you are offline, synced automatically when connectivity resumes.</li>
+  </ul>
+
+  <h3>2.7 Data Stored Only on Your Device (Not Transmitted)</h3>
+  <ul>
+    <li>Cached prayer times for offline access.</li>
+    <li>Cached daily log for offline access.</li>
+    <li>App theme preference (light/dark).</li>
+  </ul>
+
+  <!-- 3. HOW WE USE YOUR INFORMATION -->
+  <h2>3. How We Use Your Information</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Data Category</th>
+        <th>Purpose</th>
+        <th>Legal Basis</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Email, password, display name</td>
+        <td>Account creation, authentication, and identification within groups</td>
+        <td>Contract (account service)</td>
+      </tr>
+      <tr>
+        <td>GPS coordinates</td>
+        <td>Calculate daily prayer times and Qibla bearing</td>
+        <td>Consent (runtime permission) + Legitimate interest</td>
+      </tr>
+      <tr>
+        <td>Prayer log &amp; streak data</td>
+        <td>Display your history, compute streaks, generate coaching feedback, show group status</td>
+        <td>Contract (core app feature)</td>
+      </tr>
+      <tr>
+        <td>Madhab preference</td>
+        <td>Adjust prayer time calculation method</td>
+        <td>Consent (optional setting)</td>
+      </tr>
+      <tr>
+        <td>FCM token</td>
+        <td>Deliver prayer reminders and group ping notifications to your device</td>
+        <td>Consent (notification permission)</td>
+      </tr>
+      <tr>
+        <td>Notification preferences</td>
+        <td>Schedule local notifications at the correct time and with your chosen alert style</td>
+        <td>Contract (core app feature)</td>
+      </tr>
+      <tr>
+        <td>Group membership &amp; statuses</td>
+        <td>Display real-time member prayer statuses within accountability groups</td>
+        <td>Consent (opt-in feature)</td>
+      </tr>
+      <tr>
+        <td>Weekly analytics</td>
+        <td>Generate personalised AI coach feedback via a Firebase Cloud Function</td>
+        <td>Legitimate interest (app improvement)</td>
+      </tr>
+      <tr>
+        <td>Timezone</td>
+        <td>Display prayer times in your local timezone</td>
+        <td>Contract (core app feature)</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    We do <strong>not</strong> use any of your data for targeted advertising, profiling for marketing
+    purposes, or sale to third parties.
+  </p>
+
+  <!-- 4. PERMISSIONS REQUESTED -->
+  <h2>4. Device Permissions</h2>
+  <p>The App requests the following permissions. All permissions are explained at the time of request:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Permission</th>
+        <th>Why It Is Needed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ACCESS_FINE_LOCATION &amp; ACCESS_COARSE_LOCATION</td>
+        <td>Fetch accurate prayer times from the Aladhan API and compute Qibla direction</td>
+      </tr>
+      <tr>
+        <td>POST_NOTIFICATIONS (Android 13+)</td>
+        <td>Send prayer reminder notifications at the times you configure</td>
+      </tr>
+      <tr>
+        <td>VIBRATE</td>
+        <td>Vibrate the device for prayer reminder alerts</td>
+      </tr>
+      <tr>
+        <td>INTERNET</td>
+        <td>Communicate with Firebase servers and the Aladhan prayer-times API</td>
+      </tr>
+      <tr>
+        <td>SYSTEM_ALERT_WINDOW</td>
+        <td>Display system-level prayer notifications</td>
+      </tr>
+      <tr>
+        <td>READ / WRITE_EXTERNAL_STORAGE</td>
+        <td>App asset access on older Android versions</td>
+      </tr>
+      <tr>
+        <td>Motion &amp; Compass (iOS)</td>
+        <td>Read the device compass heading to display the real-time Qibla direction</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    You may deny or revoke any permission at any time in your device settings. Denying location permission
+    will prevent prayer-time calculations and Qibla compass functionality. Denying notification permission
+    will cancel all scheduled prayer reminders.
+  </p>
+
+  <!-- 5. THIRD-PARTY SERVICES -->
+  <h2>5. Third-Party Services</h2>
+  <p>
+    SalahOS integrates the following third-party services. Each has its own privacy policy that governs
+    their data practices:
+  </p>
+
+  <h3>5.1 Google Firebase (Google LLC)</h3>
+  <p>
+    We use multiple Firebase products to power the App's backend:
+  </p>
+  <ul>
+    <li><strong>Firebase Authentication</strong> – manages secure sign-up and sign-in using email and
+      password. Firebase hashes and stores passwords; we never see your plaintext password.</li>
+    <li><strong>Cloud Firestore</strong> – our primary database that stores your account profile, prayer
+      logs, streak data, group membership, notification preferences, and prayer times cache.</li>
+    <li><strong>Firebase Cloud Messaging (FCM)</strong> – delivers push notifications (prayer reminders and
+      group pings) to your device.</li>
+    <li><strong>Firebase Cloud Functions</strong> – server-side functions that generate personalised AI
+      coaching feedback based on your weekly prayer analytics, and that send group ping notifications.</li>
+  </ul>
+  <p>
+    Firebase Privacy Policy:
+    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+      https://firebase.google.com/support/privacy
+    </a>
+  </p>
+
+  <h3>5.2 Aladhan Prayer Times API</h3>
+  <p>
+    Prayer times are fetched from the Aladhan API (<a href="https://aladhan.com" target="_blank"
+    rel="noopener noreferrer">aladhan.com</a>). When requesting prayer times, the App sends your
+    latitude, longitude, and calculation method to the Aladhan API. No user identity or account
+    information is included in these requests.
+  </p>
+  <p>
+    Aladhan Privacy Policy:
+    <a href="https://aladhan.com/privacy-policy" target="_blank" rel="noopener noreferrer">
+      https://aladhan.com/privacy-policy
+    </a>
+  </p>
+
+  <h3>5.3 Expo Updates (Expo / Microsoft)</h3>
+  <p>
+    SalahOS uses Expo Updates to deliver over-the-air (OTA) app updates without requiring a full App Store
+    or Play Store release. Expo may collect anonymous crash and update telemetry data.
+  </p>
+  <p>
+    Expo Privacy Policy:
+    <a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">
+      https://expo.dev/privacy
+    </a>
+  </p>
+
+  <!-- 6. DATA STORAGE AND SECURITY -->
+  <h2>6. Data Storage and Security</h2>
+  <p>
+    All user data is stored in <strong>Google Cloud Firestore</strong>, which is hosted in Google's
+    secure cloud infrastructure. Google applies industry-standard encryption at rest and in transit
+    (TLS/HTTPS) to all Firestore data.
+  </p>
+  <p>
+    Additional security measures we apply:
+  </p>
+  <ul>
+    <li>Firebase Authentication tokens are used to authenticate all database requests, ensuring that each
+      user can only read and write their own data.</li>
+    <li>Firestore Security Rules restrict access to documents based on the authenticated user's UID.</li>
+    <li>Passwords are never stored by us; they are managed entirely by Firebase Authentication using
+      industry-standard hashing.</li>
+    <li>All communication between the App and our backend is encrypted over HTTPS.</li>
+  </ul>
+  <p>
+    While we implement strong security measures, no system is completely immune to breaches. In the event
+    of a data breach that affects your personal information, we will notify affected users in accordance
+    with applicable law.
+  </p>
+
+  <!-- 7. DATA RETENTION -->
+  <h2>7. Data Retention</h2>
+  <p>We retain your data for as long as your account is active. Specifically:</p>
+  <ul>
+    <li><strong>Account and profile data</strong> – retained until you delete your account.</li>
+    <li><strong>Prayer logs and streak data</strong> – retained until you delete your account.</li>
+    <li><strong>Prayer times cache</strong> – retained for up to 1 year on a rolling basis; older entries
+      are periodically purged.</li>
+    <li><strong>FCM push tokens</strong> – retained until you sign out, uninstall the App, or your token
+      is rotated by the device operating system.</li>
+    <li><strong>Group data</strong> – a group and its data are deleted when the last member leaves.</li>
+  </ul>
+  <p>
+    When you delete your account, we will permanently delete all personally identifiable data associated
+    with your account from our servers within 30 days.
+  </p>
+
+  <!-- 8. DATA SHARING -->
+  <h2>8. Data Sharing</h2>
+  <p>We do <strong>not</strong> sell, rent, or trade your personal data. We share data only in the
+  following limited circumstances:</p>
+  <ul>
+    <li><strong>Within accountability groups:</strong> Your display name and daily prayer statuses
+      (on-time, late, missed) are visible to other members of any group you voluntarily join or create.
+      You can leave a group at any time.</li>
+    <li><strong>Service providers:</strong> Data is processed by Firebase (Google LLC) and the Aladhan
+      API solely to deliver the App's features, as described in Section 5.</li>
+    <li><strong>Legal obligations:</strong> We may disclose information if required by law, court order,
+      or governmental authority.</li>
+    <li><strong>Business transfer:</strong> In the unlikely event of a merger, acquisition, or asset sale,
+      user data may be transferred. We will notify users before their data is transferred and becomes
+      subject to a different privacy policy.</li>
+  </ul>
+
+  <!-- 9. USER RIGHTS -->
+  <h2>9. Your Rights and Choices</h2>
+  <p>
+    Depending on your jurisdiction, you may have the following rights regarding your personal data:
+  </p>
+  <ul>
+    <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+    <li><strong>Correction:</strong> Update or correct inaccurate data (display name can be updated in
+      Settings; email update requires re-authentication).</li>
+    <li><strong>Deletion:</strong> Request deletion of your account and all associated data by contacting
+      us at <a href="mailto:alisohail6835@gmail.com">alisohail6835@gmail.com</a>. We will process your
+      request within 30 days.</li>
+    <li><strong>Portability:</strong> Request an export of your prayer log data in a structured format.</li>
+    <li><strong>Withdraw consent:</strong> You can revoke location or notification permissions in your
+      device settings at any time.</li>
+    <li><strong>Opt out of notifications:</strong> Disable all prayer reminders in the App's Settings
+      screen at any time.</li>
+    <li><strong>Leave a group:</strong> You can leave any accountability group at any time, which removes
+      your data from that group immediately.</li>
+  </ul>
+  <p>
+    To exercise any of these rights, please contact us at
+    <a href="mailto:alisohail6835@gmail.com">alisohail6835@gmail.com</a>.
+  </p>
+
+  <!-- 10. CHILDREN'S PRIVACY -->
+  <h2>10. Children's Privacy</h2>
+  <div class="warning-box">
+    <strong>Important notice for parents and guardians:</strong> SalahOS is a family-friendly application
+    designed to help Muslims of all ages maintain their daily prayers. The App does not contain
+    advertisements, in-app purchases, or content inappropriate for children.
+  </div>
+  <p>
+    In compliance with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and
+    <strong>Google Play's Families Policy</strong>:
+  </p>
+  <ul>
+    <li>The App is intended to be used by individuals of all ages, including children, under appropriate
+      parental supervision.</li>
+    <li>Creating an account requires providing an email address. We require that users under the age of
+      13 (or the applicable age of digital consent in your jurisdiction) only use the App with the
+      knowledge and supervision of a parent or legal guardian.</li>
+    <li>We do <strong>not</strong> knowingly collect personal information from children under 13 without
+      verifiable parental consent. If a parent or guardian believes their child under 13 has provided us
+      with personal information without consent, please contact us immediately at
+      <a href="mailto:alisohail6835@gmail.com">alisohail6835@gmail.com</a> and we will promptly delete
+      that information.</li>
+    <li>We do not display interest-based advertising, behavioural advertising, or any form of advertising
+      within the App.</li>
+    <li>We do not enable social features (such as group chats) beyond the structured accountability groups
+      described in this policy.</li>
+    <li>We do not share children's data with any third party beyond what is necessary to operate the App
+      (Firebase and Aladhan API as described above).</li>
+  </ul>
+
+  <!-- 11. INTERNATIONAL USERS -->
+  <h2>11. International Data Transfers</h2>
+  <p>
+    SalahOS is operated from Pakistan and uses Firebase services hosted by Google LLC, whose servers may
+    be located in the United States and other countries. By using the App, you acknowledge that your data
+    may be transferred to and processed in countries outside your own, which may have different data
+    protection laws. Google applies appropriate safeguards (including Standard Contractual Clauses) for
+    international data transfers.
+  </p>
+
+  <!-- 12. CALIFORNIA PRIVACY RIGHTS -->
+  <h2>12. California Privacy Rights (CCPA)</h2>
+  <p>
+    If you are a California resident, you have the right to:
+  </p>
+  <ul>
+    <li>Know what personal information is being collected about you.</li>
+    <li>Know whether your personal information is sold or disclosed, and to whom.</li>
+    <li>Opt out of the sale of personal information (we do not sell personal information).</li>
+    <li>Request deletion of your personal information.</li>
+    <li>Not be discriminated against for exercising your privacy rights.</li>
+  </ul>
+  <p>
+    To submit a CCPA request, contact us at
+    <a href="mailto:alisohail6835@gmail.com">alisohail6835@gmail.com</a>.
+  </p>
+
+  <!-- 13. GDPR -->
+  <h2>13. European Users (GDPR)</h2>
+  <p>
+    If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have
+    additional rights under the General Data Protection Regulation (GDPR) and applicable local law,
+    including the rights to access, rectify, erase, restrict processing of, and port your data. You also
+    have the right to lodge a complaint with your local data protection authority.
+  </p>
+  <p>
+    Our lawful bases for processing are: <em>performance of a contract</em> (account and core features),
+    <em>consent</em> (location permission, notification permission, optional madhab preference), and
+    <em>legitimate interests</em> (analytics, security, and service improvement).
+  </p>
+
+  <!-- 14. CHANGES TO THIS POLICY -->
+  <h2>14. Changes to This Privacy Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. When we make material changes, we will notify
+    you by updating the "Last Updated" date at the top of this page and, where required by law or where
+    reasonably practicable, by sending you an in-app notification or email. Your continued use of SalahOS
+    after the effective date of any updated policy constitutes your acceptance of the changes.
+  </p>
+  <p>
+    We encourage you to review this Privacy Policy periodically to stay informed about how we protect
+    your information.
+  </p>
+
+  <!-- 15. CONTACT -->
+  <h2>15. Contact Us</h2>
+  <p>
+    If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data,
+    please contact:
+  </p>
+  <ul>
+    <li><strong>Developer:</strong> Ali Sohail</li>
+    <li><strong>Email:</strong> <a href="mailto:alisohail6835@gmail.com">alisohail6835@gmail.com</a></li>
+    <li><strong>Application:</strong> SalahOS – Islamic Prayer Tracker</li>
+  </ul>
+  <p>
+    We aim to respond to all privacy-related requests within <strong>30 days</strong>.
+  </p>
+
+  <footer>
+    <p>© 2026 Ali Sohail. SalahOS – Islamic Prayer Tracker. All rights reserved.</p>
+    <p>This privacy policy is effective as of April 17, 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>
