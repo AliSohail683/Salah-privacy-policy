@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – Salah Deen</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      background: #ffffff;
+    }
+    header {
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 24px;
+      margin-bottom: 36px;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #1b5e20;
+      margin-bottom: 8px;
+    }
+    header p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #1b5e20;
+      margin: 40px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    h3 {
+      font-size: 1.05rem;
+      color: #2e7d32;
+      margin: 24px 0 8px;
+    }
+    p { margin-bottom: 14px; }
+    ul, ol {
+      margin: 10px 0 18px 24px;
+    }
+    li { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 0.9rem;
+    }
+    th {
+      background: #e8f5e9;
+      color: #1b5e20;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid #c8e6c9;
+    }
+    td {
+      padding: 9px 14px;
+      border: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #f9fbe7; }
+    .highlight-box {
+      background: #e8f5e9;
+      border-left: 4px solid #4CAF50;
+      padding: 14px 18px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .warning-box {
+      background: #fff8e1;
+      border-left: 4px solid #FFC107;
+      padding: 14px 18px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    a { color: #2e7d32; }
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.88rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Support</h1>
+    <p><strong>Application:</strong> Salah Deen – Islamic Prayer Tracker</p>
+    <p><strong>Developer:</strong> Ali Sohail</p>
+    <p><strong>Last Updated:</strong> April 17, 2026</p>
+  </header>
+
+  <!-- QUICK CONTACT -->
+  <div class="highlight-box">
+    <strong>Need help fast?</strong> Email
+    <a href="mailto:alisohail6835@gmail.com?subject=Salah%20Deen%20Support">alisohail6835@gmail.com</a>.
+    We respond to most questions within <strong>48 hours</strong>. Privacy and data-deletion requests are
+    handled within <strong>30 days</strong> as described in our
+    <a href="index.html">Privacy Policy</a>.
+  </div>
+
+  <p>
+    Welcome to Salah Deen support. This page answers the most common questions, walks you through
+    troubleshooting steps, and tells you how to reach us if you need a hand. Salah Deen is built to help
+    Muslims pray on time, find the Qibla, build consistent streaks, and stay accountable — and we want
+    your experience to be smooth from Fajr to Isha.
+  </p>
+
+  <!-- 1. GETTING STARTED -->
+  <h2>1. Getting Started</h2>
+
+  <h3>1.1 Creating an account</h3>
+  <p>
+    Open the app, tap <strong>Sign Up</strong>, enter your email, a password, and a display name. We send
+    a verification email immediately — check your inbox (and Spam folder). You must verify your email
+    before prayer reminders can be scheduled.
+  </p>
+
+  <h3>1.2 Email verification didn't arrive</h3>
+  <ul>
+    <li>Wait 60 seconds, then check your Spam or Promotions folder.</li>
+    <li>Tap <strong>Resend verification email</strong> on the sign-in screen.</li>
+    <li>Confirm you typed your email correctly — typos are the #1 cause.</li>
+    <li>Still nothing after 10 minutes? Email us and we'll verify your account manually.</li>
+  </ul>
+
+  <h3>1.3 Allowing location and notifications</h3>
+  <p>
+    On first launch, Salah Deen asks for two permissions:
+  </p>
+  <ul>
+    <li><strong>Location</strong> — required to calculate accurate prayer times and Qibla direction for
+      your exact position. Without this, the app cannot work.</li>
+    <li><strong>Notifications</strong> — required to send prayer reminders and the adhan alarm. Without
+      this, you'll need to open the app to check times.</li>
+  </ul>
+  <p>
+    If you accidentally denied either, you can re-enable them in your device's Settings app. See
+    <a href="#troubleshooting">Troubleshooting</a> below.
+  </p>
+
+  <!-- 2. PRAYER TIMES -->
+  <h2>2. Prayer Times</h2>
+
+  <h3>2.1 Times look wrong or are for a different city</h3>
+  <ul>
+    <li>Make sure location permission is set to <em>Always</em> or <em>While Using</em>.</li>
+    <li>Pull down on the home screen to refresh.</li>
+    <li>Check your <strong>Madhab</strong> setting (Settings → Madhab). Hanafi Asr is calculated
+      differently from Shafi'i/Maliki/Hanbali Asr; a wrong madhab gives a wrong Asr by 30–60 minutes.</li>
+    <li>If you recently traveled, force-close and re-open the app to trigger a fresh location lookup.</li>
+  </ul>
+
+  <h3>2.2 Times haven't updated for the new day</h3>
+  <p>
+    Salah Deen caches the next 7 days of prayer times locally so the app works offline. If you've been
+    offline longer than that, connect to the internet and re-open the app — times will refresh
+    automatically. The app re-fetches whenever you move more than ~2.5 km.
+  </p>
+
+  <h3>2.3 Which calculation method does Salah Deen use?</h3>
+  <p>
+    Prayer times are calculated using the <a href="https://aladhan.com" target="_blank"
+    rel="noopener noreferrer">Aladhan API</a>, a widely respected open prayer-time service. The default
+    method follows the most common convention for your region; your selected Madhab adjusts the Asr
+    calculation only.
+  </p>
+
+  <!-- 3. PRAYER NOTIFICATIONS & ADHAN ALARM -->
+  <h2>3. Prayer Notifications &amp; Adhan Alarm</h2>
+
+  <h3>3.1 I'm not getting any prayer notifications</h3>
+  <ol>
+    <li>Confirm OS notification permission is granted: <em>Settings → Salah Deen → Notifications →
+      Allow Notifications</em>.</li>
+    <li>Inside the app: <em>Settings → Prayer Reminders</em> — make sure the master toggle and the
+      individual prayer toggles are on.</li>
+    <li><strong>Android only:</strong> disable battery optimization for Salah Deen
+      (<em>Settings → Apps → Salah Deen → Battery → Unrestricted</em>). Aggressive battery savers can
+      kill scheduled alarms.</li>
+    <li><strong>iOS only:</strong> check <em>Focus modes</em> — if a Focus is on, prayer alerts may be
+      silenced. Add Salah Deen to the Focus's allowed apps.</li>
+    <li>Sign out and sign back in to refresh the push notification token.</li>
+  </ol>
+
+  <h3>3.2 The adhan alarm fired silently / I slept through Fajr</h3>
+  <ul>
+    <li>Your device may have been on Silent or Do Not Disturb. The adhan alarm respects the ringer
+      switch by default.</li>
+    <li>Increase the alert sound level in <em>Settings → Prayer Reminders → Alert Style</em>.</li>
+    <li>On iOS, allow <em>Critical Alerts</em> for Salah Deen so Fajr can break through Do Not Disturb
+      (an OS-level permission you grant once).</li>
+    <li>Make sure your phone isn't connected to a Bluetooth speaker that's powered off — audio routes
+      there silently.</li>
+  </ul>
+
+  <h3>3.3 How far in advance can I be reminded?</h3>
+  <p>
+    For each prayer you can choose a pre-alert from 0 to 60 minutes before the time in <em>Settings →
+    Prayer Reminders</em>. The adhan itself fires at the prayer time. Reminders are pre-scheduled for the
+    next 7 days, so they work even if your phone is offline overnight.
+  </p>
+
+  <!-- 4. QIBLA COMPASS -->
+  <h2>4. Qibla Compass</h2>
+
+  <h3>4.1 The compass needle spins or points the wrong way</h3>
+  <p>
+    Your device compass needs to be calibrated:
+  </p>
+  <ul>
+    <li>Hold your phone flat and move it in a <strong>figure-8 motion</strong> a few times — this is the
+      standard compass calibration motion on both iOS and Android.</li>
+    <li>Move away from metal objects, magnets, speakers, laptops, and car dashboards — they distort the
+      magnetic field.</li>
+    <li>Restart the app after calibrating.</li>
+  </ul>
+
+  <h3>4.2 Does Qibla work indoors?</h3>
+  <p>
+    Yes — the Qibla bearing is calculated from your GPS coordinates (which work indoors if you have any
+    signal), and the compass uses your device's magnetometer. Just be aware that indoor environments
+    often have magnetic interference, so calibrate often.
+  </p>
+
+  <!-- 5. STREAKS & PRAYER LOGGING -->
+  <h2>5. Streaks &amp; Prayer Logging</h2>
+
+  <h3>5.1 How is a prayer counted as on-time, late, or missed?</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>How it's set</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>On time</strong></td>
+        <td>Marked complete before the next prayer's start time</td>
+      </tr>
+      <tr>
+        <td><strong>Late</strong></td>
+        <td>Marked complete after the next prayer began but before the day ends</td>
+      </tr>
+      <tr>
+        <td><strong>Missed</strong></td>
+        <td>Not marked complete by the end of the day</td>
+      </tr>
+      <tr>
+        <td><strong>Unmarked</strong></td>
+        <td>Default state until you tap to log</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>5.2 My streak reset and I think it's a bug</h3>
+  <p>
+    A streak continues as long as you log Fajr each day. If Fajr is logged as missed (or not logged by
+    the end of the day), the streak resets. Streaks cannot be manually restored — this is intentional to
+    keep accountability honest. If you believe there is a real data bug (e.g., your prayer was logged
+    but the streak still reset), email us with your account email and the date in question.
+  </p>
+
+  <h3>5.3 Can I edit yesterday's prayer log?</h3>
+  <p>
+    You can mark a missed prayer for the current day until midnight local time. Past days are locked to
+    preserve the integrity of streaks and group accountability.
+  </p>
+
+  <!-- 6. ACCOUNTABILITY GROUPS -->
+  <h2>6. Accountability Groups</h2>
+
+  <h3>6.1 Creating a group</h3>
+  <p>
+    Tap <em>Groups → Create Group</em>, give it a name, and you'll receive a 6-character invite code to
+    share with friends or family. There is no limit on how many groups you can create or join.
+  </p>
+
+  <h3>6.2 Joining a group</h3>
+  <p>
+    Ask the group creator for the 6-character invite code, then tap <em>Groups → Join Group</em> and
+    enter it.
+  </p>
+
+  <h3>6.3 What do other group members see about me?</h3>
+  <ul>
+    <li>Your display name.</li>
+    <li>Today's prayer statuses (on-time / late / missed / unmarked) for each of the five prayers.</li>
+    <li>Your current streak.</li>
+  </ul>
+  <p>
+    Other members <strong>cannot</strong> see your email, your location, your past days, or your AI
+    coach feedback.
+  </p>
+
+  <h3>6.4 Leaving a group</h3>
+  <p>
+    Tap the group, then <em>Leave Group</em>. Your data is removed from that group immediately. If you
+    were the last member, the group is deleted entirely.
+  </p>
+
+  <!-- 7. AI COACH -->
+  <h2>7. AI Coach Feedback</h2>
+
+  <p>
+    The AI coach reviews your weekly aggregate prayer statuses (not individual prayers, not your
+    location, not your group data) and generates a short, personalised piece of feedback to help you
+    improve. New feedback is generated approximately once per week. If feedback feels off, you can
+    safely ignore it — your streak and logs are unaffected.
+  </p>
+
+  <!-- 8. PREMIUM / SUBSCRIPTION -->
+  <h2>8. Premium &amp; Subscriptions</h2>
+
+  <h3>8.1 What does Premium include?</h3>
+  <p>Salah Deen Premium unlocks the full experience:</p>
+  <ul>
+    <li><strong>AI Prayer Coach</strong> — weekly personalised feedback based on your prayer patterns.</li>
+    <li><strong>Advanced streak &amp; habit analytics</strong> — deeper insight into your consistency,
+      Fajr-specific streaks, and long-term trends.</li>
+    <li><strong>Prayer groups &amp; accountability</strong> — create or join groups with family and
+      friends to keep each other on track.</li>
+    <li><strong>Full Quran with translation</strong> — read the Quran inside the app with translation
+      alongside the Arabic.</li>
+    <li><strong>Qibla compass with live calibration</strong> — real-time, calibrated Qibla direction
+      from anywhere on Earth.</li>
+    <li><strong>Smart reminders for every prayer</strong> — adhan-style alarms and configurable
+      pre-prayer reminders for all five daily prayers.</li>
+  </ul>
+  <p>Premium is available as a monthly or yearly subscription.</p>
+
+  <h3>8.2 Managing your subscription</h3>
+  <ul>
+    <li><strong>iOS:</strong> <em>Settings app → [Your Name] → Subscriptions → Salah Deen</em>. From
+      there you can change tier, pause, or cancel.</li>
+    <li><strong>Android:</strong> <em>Play Store app → Profile icon → Payments &amp; subscriptions →
+      Subscriptions → Salah Deen</em>.</li>
+  </ul>
+
+  <h3>8.3 Restoring purchases</h3>
+  <p>
+    If you previously paid for Premium and your subscription isn't recognised (after reinstalling, on a
+    new device, or after signing in with a different Apple/Google account), tap <em>Settings → Restore
+    Purchases</em> in the app.
+  </p>
+
+  <h3>8.4 Cancelling</h3>
+  <p>
+    Cancel anytime through your App Store or Play Store subscription settings (see 8.2). You'll keep
+    Premium access until the end of the current billing period. We don't lock you in — no in-app
+    cancellation friction.
+  </p>
+
+  <h3>8.5 Refunds</h3>
+  <p>
+    All payments are processed by Apple or Google, not by us, so refunds are handled through them
+    directly:
+  </p>
+  <ul>
+    <li><strong>Apple:</strong>
+      <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">
+        reportaproblem.apple.com
+      </a>
+    </li>
+    <li><strong>Google:</strong>
+      <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">
+        Google Play refund policy
+      </a>
+    </li>
+  </ul>
+  <p>
+    If you've been charged but didn't receive Premium features, contact us — we'll help diagnose and, if
+    needed, vouch for your refund request to Apple or Google.
+  </p>
+
+  <!-- 9. ACCOUNT MANAGEMENT -->
+  <h2>9. Account Management</h2>
+
+  <h3>9.1 Changing your display name</h3>
+  <p>
+    <em>Settings → Profile → Display Name.</em> The change is instant and visible to your accountability
+    groups.
+  </p>
+
+  <h3>9.2 Changing your email or password</h3>
+  <p>
+    For security, Firebase Authentication requires you to re-enter your current password before changing
+    either. Go to <em>Settings → Account → Change Email / Change Password</em>. If you've forgotten your
+    password, use <em>Forgot Password</em> on the sign-in screen to receive a reset link.
+  </p>
+
+  <h3>9.3 Deleting your account</h3>
+  <p>
+    Email <a href="mailto:alisohail6835@gmail.com?subject=Salah%20Deen%20-%20Account%20Deletion%20Request">
+    alisohail6835@gmail.com</a> from the email associated with your account. We will permanently delete
+    all personally identifiable data — profile, prayer logs, streaks, group memberships, and FCM tokens
+    — within <strong>30 days</strong>, in accordance with our
+    <a href="index.html">Privacy Policy</a>.
+  </p>
+
+  <!-- 10. OFFLINE MODE -->
+  <h2>10. Offline Mode</h2>
+  <p>
+    Salah Deen is built to work even when you have no signal. Here's what works and what doesn't:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Works offline?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Today's prayer times</td><td>Yes — cached for 7 days</td></tr>
+      <tr><td>Adhan alarm &amp; reminders</td><td>Yes — pre-scheduled locally</td></tr>
+      <tr><td>Qibla compass</td><td>Yes — needs only GPS + magnetometer</td></tr>
+      <tr><td>Logging today's prayers</td><td>Yes — synced when you reconnect</td></tr>
+      <tr><td>Streak display</td><td>Yes — last known value</td></tr>
+      <tr><td>Group member statuses</td><td>No — requires connection</td></tr>
+      <tr><td>AI coach feedback</td><td>No — generated on the server</td></tr>
+      <tr><td>Sign up / sign in</td><td>No — requires connection</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 11. TROUBLESHOOTING -->
+  <h2 id="troubleshooting">11. Troubleshooting Steps</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Issue</th>
+        <th>First check</th>
+        <th>Then try</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>No prayer notifications</td>
+        <td>OS notification permission is on</td>
+        <td>Disable battery optimization (Android); allow Critical Alerts (iOS); sign out and back in</td>
+      </tr>
+      <tr>
+        <td>Prayer times look stale or wrong</td>
+        <td>Location permission &amp; madhab setting</td>
+        <td>Pull-to-refresh; force-close and re-open</td>
+      </tr>
+      <tr>
+        <td>Qibla unreliable</td>
+        <td>Move away from metal/magnets</td>
+        <td>Calibrate with figure-8 motion; restart the app</td>
+      </tr>
+      <tr>
+        <td>App crashes on launch</td>
+        <td>Restart your phone</td>
+        <td>Update Salah Deen in the App Store / Play Store; reinstall if needed</td>
+      </tr>
+      <tr>
+        <td>Login fails</td>
+        <td>Email + password correct; internet on</td>
+        <td>Reset password via email link; clear app cache (Android)</td>
+      </tr>
+      <tr>
+        <td>Location not detected</td>
+        <td>Location services enabled at OS level</td>
+        <td>Re-grant permission to Salah Deen; restart the app</td>
+      </tr>
+      <tr>
+        <td>Premium not unlocked after payment</td>
+        <td>Same Apple/Google account as the purchase</td>
+        <td>Tap <em>Settings → Restore Purchases</em>; email us with your order ID</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 12. REPORT A BUG -->
+  <h2>12. Report a Bug</h2>
+  <p>
+    Help us fix issues faster by including:
+  </p>
+  <ul>
+    <li>Your device model (e.g., iPhone 14 Pro, Pixel 7).</li>
+    <li>Your OS version (e.g., iOS 17.4, Android 14).</li>
+    <li>Salah Deen app version (visible at the bottom of <em>Settings</em>).</li>
+    <li>A clear description of what you did and what went wrong.</li>
+    <li>One or two screenshots if the issue is visual.</li>
+    <li>Approximate time the issue occurred (so we can match logs).</li>
+  </ul>
+  <p>
+    Email <a href="mailto:alisohail6835@gmail.com?subject=%5BBug%5D%20Salah%20Deen">
+    alisohail6835@gmail.com</a> with subject prefix <code>[Bug]</code>.
+  </p>
+
+  <!-- 13. FEATURE REQUESTS -->
+  <h2>13. Feature Requests</h2>
+  <p>
+    We genuinely read every feature request. Email
+    <a href="mailto:alisohail6835@gmail.com?subject=%5BFeature%5D%20Salah%20Deen">
+    alisohail6835@gmail.com</a> with subject prefix <code>[Feature]</code> and tell us what you'd like
+    to see — Hijri calendar, tasbih counter, Quran tracker, dua library, widgets, Apple Watch, and more
+    are on our radar.
+  </p>
+
+  <!-- 14. PRIVACY & DATA REQUESTS -->
+  <h2>14. Privacy &amp; Data Requests</h2>
+  <p>
+    Your data is yours. Under our <a href="index.html">Privacy Policy</a>, you have the right
+    to:
+  </p>
+  <ul>
+    <li><strong>Access</strong> — request a copy of the data we hold about you.</li>
+    <li><strong>Correction</strong> — fix anything that's wrong.</li>
+    <li><strong>Deletion</strong> — permanently remove your account and all associated data.</li>
+    <li><strong>Portability</strong> — get an export of your prayer log in a structured format.</li>
+    <li><strong>Withdraw consent</strong> — revoke location or notification permissions at any time.</li>
+  </ul>
+  <p>
+    All requests are handled within <strong>30 days</strong>. Email
+    <a href="mailto:alisohail6835@gmail.com?subject=Salah%20Deen%20-%20Privacy%20Request">
+    alisohail6835@gmail.com</a>.
+  </p>
+
+  <!-- 15. SYSTEM REQUIREMENTS -->
+  <h2>15. System Requirements</h2>
+  <ul>
+    <li><strong>iOS:</strong> 15.1 or later. Compatible with iPhone and iPad.</li>
+    <li><strong>Android:</strong> 7.0 (API 24) or later.</li>
+    <li><strong>Internet:</strong> required for first launch, account creation, and group sync. Daily
+      use works offline once prayer times are cached.</li>
+    <li><strong>Permissions:</strong> location (required), notifications (required for reminders),
+      motion/compass (required for Qibla).</li>
+  </ul>
+
+  <!-- 16. CONTACT -->
+  <h2>16. Contact Us</h2>
+  <p>
+    For anything not covered above — questions, feedback, partnership inquiries, or just to say salam:
+  </p>
+  <ul>
+    <li><strong>Developer:</strong> Ali Sohail</li>
+    <li><strong>Email:</strong> <a href="mailto:alisohail6835@gmail.com">alisohail6835@gmail.com</a></li>
+    <li><strong>Application:</strong> Salah Deen – Islamic Prayer Tracker</li>
+    <li><strong>Privacy Policy:</strong> <a href="index.html">index.html</a></li>
+  </ul>
+  <p>
+    We aim to respond to all support emails within <strong>48 hours</strong>, and to privacy or
+    data-deletion requests within <strong>30 days</strong>.
+  </p>
+
+  <footer>
+    <p>© 2026 Ali Sohail. Salah Deen – Islamic Prayer Tracker. All rights reserved.</p>
+    <p>This support page was last updated on April 17, 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>
